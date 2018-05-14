@@ -1,0 +1,61 @@
+package lab3;
+
+/**
+ * 
+ * 		A RabbitMode is used to simulate the growth
+ * 		of a population of rabbits
+ * @author Drew
+ *
+ */
+public class RabbitModel {
+	
+	// TODO - Add instance variables as needed
+	private int pop;
+	private int year;
+	
+	/**
+	 * Constructs a new RabbitModel
+	 */
+	public RabbitModel(){
+		
+		pop = 0;
+		year = 0;
+		
+	}
+	
+	/**
+	 * Returns the current number of rabbits
+	 * @return
+	 * 		current rabbit population
+	 */
+	public int getPopulation(){
+		
+		return pop ;
+		
+	}
+	
+	/**
+	 *  Updates the population to simulate the passing of the year
+	 */
+	public void simulateYear(){
+		
+		pop++;
+		year++;
+		if(year % 5 == 1 && year > 5){
+			
+			pop = 0;
+			
+		}
+	}
+	
+	/**
+	 * Sets or resets the state of the model
+	 * to the initial conditions
+	 */
+	public void reset(){
+		
+		pop = 0;
+		
+	}
+	
+}

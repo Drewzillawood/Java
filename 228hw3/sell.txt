@@ -1,0 +1,4 @@
+apple 60
+banana 10
+grape 50
+peach 100
